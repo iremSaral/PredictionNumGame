@@ -5,9 +5,9 @@ import kotlin.system.exitProcess
 
 fun main() {
     println("Welcome to the Number Prediction Game!")
-    println("You have a threee change to find a true number, that computer predict. Good Luck :)")
+    println("You have three chances to find the correct number that the computer has predicted. Good luck :)")
     val pred = Random.nextInt(0, 101);
-    println(pred)
+    //println(pred)
     var live: Int = 3
 
     while (live > 0) {
@@ -28,7 +28,7 @@ fun main() {
                     println("Hint: You should try a higher num ")
                 }
             } else {
-                println("Game over. You ran out of lives.")
+                println("Hint: Game over. You ran out of lives.")
                 exitProcess(0)
             }
         }
